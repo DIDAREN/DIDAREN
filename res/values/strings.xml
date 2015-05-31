@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">地大人</string>
+    <string name="app_description">Android drawer icon with material design animation</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="title_section1">学工要闻</string>
+    <string name="title_section2">通知公告</string>
+    <string name="title_section3">活动预告</string>
+    <string name="title_section4">热点关注</string>
+    <string name="title_section5">扫码签到</string>
+    <string name="user_data">用户中心</string>
+    
+    <string name="login">登陆</string>
+    <string name="login_password_hint">密码</string>
+    <string name="login_username_hint">学/工号</string>
+    <string name="id_hint">学号</string>
+    <string name="name_hint">姓名</string>
+    <string name="finish">注册完成</string>
+    <string name="password_hint">密码</string>
+    <string name="year_hint">年级</string>
+    <string name="college_hint">学院</string>
+    <string name="register">没有账号？点击注册</string>
+    
+    <string name="college_prompt">学院</string>
+    <string name="year_prompt">年级</string>
+
+</resources>

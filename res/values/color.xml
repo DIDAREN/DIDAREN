@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_color">#0099CC</color>
+    <color name="drawer_arrow_second_color">#303f9f</color>
+    <color name="ldrawer_color">#FFFFFF</color>
+    <color name="nav_drawer_bg">#cccc</color>
+    <color name="item_bg">#ffffff</color>
+    <color name="item_text_color">#000000</color>
+    <color name="divider_color">#808080</color>
+    <color name="dida_blue">#0099cc</color>
+</resources>

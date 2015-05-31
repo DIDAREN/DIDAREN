@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_data_bg">
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip" >
+                    <EditText
+                        android:id="@+id/userName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bk"
+                        android:maxLength="20"
+                        android:editable="false"
+                        android:paddingLeft="10.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip" >
+                    <EditText
+                        android:id="@+id/userId"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bk"
+                        android:maxLength="20"
+                        android:paddingLeft="10.0dip"
+                        android:editable="false"
+                        android:paddingTop="10.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip" >
+                    <EditText
+                        android:id="@+id/userIdentity"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bk"
+                        android:editable="false"
+                        android:maxLength="20"
+                        android:paddingLeft="10.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/collegeLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip" >
+                    <EditText
+                        android:id="@+id/userCollege"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bk"
+                        android:maxLength="20"
+                        android:editable="false"
+                        android:paddingLeft="10.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/majorLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip" >
+                    <EditText
+                        android:id="@+id/userMajor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bk"
+                        android:editable="false"
+                        android:maxLength="20"
+                        android:paddingLeft="10.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/yearLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip" >
+                    <EditText
+                        android:id="@+id/userYear"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bk"
+                        android:editable="false"
+                        android:maxLength="20"
+                        android:paddingLeft="10.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/departmentLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip" >
+                    <EditText
+                        android:id="@+id/userDepartment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bk"
+                        android:editable="false"
+                        android:maxLength="20"
+                        android:paddingLeft="10.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button 
+                android:id="@+id/logOff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_marginTop="30.0dip"
+                android:text="退出登录"
+                android:textColor="#ffffff"
+                android:textSize="24.0dip"/>
+       </LinearLayout>
+</RelativeLayout>

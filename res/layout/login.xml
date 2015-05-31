@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgd"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="20.0dip"
+        android:paddingRight="20.0dip" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dip" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" >
+                    <EditText
+                        android:id="@+id/LoginId"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bk"
+                        android:hint="@string/login_username_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="30.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" >
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/bk"
+                        android:ems="10"
+                        android:hint="@string/login_password_hint"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberPassword"
+                        android:maxLength="16"
+                        android:paddingLeft="10.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13.0dip"
+                android:orientation="horizontal" >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" >
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" 
+                android:orientation="horizontal"
+                android:paddingTop="30.0dip"
+                android:paddingBottom="15.0dip">
+                <Button
+                    android:id="@+id/stuButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.00"
+                    android:background="@drawable/bk2"
+                    android:paddingLeft="10.0dip"
+                    android:textColor="#ffffff"
+                    android:text="学生登录"
+                    android:textSize="20.0dip" />
+                <Button
+                    android:id="@+id/teaButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.00"
+                    android:background="@drawable/bk3"
+                    android:paddingRight="10.0dip"
+                    android:textColor="#ffffff"
+                    android:text="老师登录"
+                    android:textSize="20.0dip"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/Register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bk1"
+                android:text="@string/register"
+                android:textColor="#000000"
+                android:textSize="16.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

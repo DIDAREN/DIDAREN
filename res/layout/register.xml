@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/gd"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" >
+                    <RadioGroup 
+                        android:id="@+id/radioGroup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip">
+                        <RadioButton 
+                            android:id="@+id/std_button"
+                            android:layout_width="0dp"
+                            android:background="@drawable/bk"
+                            android:layout_height="match_parent"
+                            android:text="学生"
+                            android:padding="5dip"
+                            android:layout_weight="1"/>
+                        <RadioButton 
+                            android:id="@+id/tea_button"
+                            android:layout_width="0dp"
+                            android:background="@drawable/bk"
+                            android:layout_height="match_parent"
+                            android:padding="5dip"
+                            android:text="老师"
+                            android:layout_weight="1"/>
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" >
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bk"
+                        android:ems="11"
+                        android:hint="@string/name_hint"
+                        android:imeOptions="actionNext"
+                        android:maxLength="11"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="30.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/StudentIDerrorid"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="58.0dip"
+                android:text="error"
+                android:textColor="#ffff0000"
+                android:textSize="13.0dip"
+                android:visibility="gone" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13.0dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip" >
+                    <EditText
+                        android:id="@+id/id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/bk"
+                        android:ems="6"
+                        android:hint="@string/id_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:paddingLeft="10.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" >
+                        <requestFocus />
+                    </EditText>
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/Professionalerrorid"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="58.0dip"
+                android:text="error"
+                android:textColor="#ffff0000"
+                android:textSize="13.0dip"
+                android:visibility="gone" />
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip" >
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:hint="@string/password_hint"
+                        android:background="@drawable/bk"
+                        android:imeOptions="actionNext"
+                        android:maxLength="15"
+                        android:password="true"
+                        android:inputType="numberPassword"
+                        android:paddingLeft="10.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip" >
+                    <EditText
+                        android:id="@+id/classNum"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:hint="班号(如:011121)"
+                        android:background="@drawable/bk"
+                        android:imeOptions="actionNext"
+                        android:maxLength="15"
+                        android:visibility="gone"
+                        android:inputType="phone"
+                        android:paddingLeft="10.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+                    <Spinner 
+                       android:paddingLeft="10.0dip"
+                        android:id="@+id/teaDepart"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bk" />
+                   <ImageView
+                            android:id="@+id/trangle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="17dp"
+                            android:visibility="gone"
+                            android:background="@drawable/ic_menu_trangle_down"
+                            android:gravity="right" />
+                </RelativeLayout>
+            </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/Register"
+                android:layout_width="200.0dip"
+                android:layout_height="42.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="12.0dip"
+                android:layout_marginTop="12.0dip"
+                android:background="@drawable/button"
+                android:text="@string/finish"
+                android:textColor="#FFFFFF"
+                android:textSize="18.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

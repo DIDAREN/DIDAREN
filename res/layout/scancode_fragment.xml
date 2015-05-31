@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/user_data_bg">"
+	<ImageView
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    android:id="@+id/notLogin"
+	    android:src="@drawable/background"
+	    android:scaleType="fitXY"
+	    android:visibility="gone"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="0.29" >
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="详细信息"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/result_string"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="#0099cc"
+            android:textSize="16sp" />
+
+        <TableRow android:layout_marginTop="20dp" >
+
+            <TextView
+                android:text="姓        名："
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:text="无"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp" >
+
+            <TextView
+                android:text="会议名称："
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/meeting_name"
+                android:text="无"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp" >
+
+            <TextView
+                android:text="会议地点："
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/meeting_place"
+                android:text="无"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp" >
+
+            <TextView
+                android:text="会议时间："
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/meeting_time"
+                android:text="无"
+                android:textSize="16sp" />
+        </TableRow>
+    </TableLayout>
+	    <Button 
+	        android:id="@+id/scanButton"
+	        android:background="@drawable/button"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+	        android:layout_marginLeft="25dp"
+	        android:layout_marginRight="25dp"
+	        android:layout_marginBottom="100dp"
+	        android:textColor="#ffffff"
+	        android:textStyle="bold"
+	        android:gravity="center"
+	        android:text="扫二维码"/>
+</LinearLayout>
